@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.8.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .roboto-400 {
+            color: #3E3E3E;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .roboto-500 {
+            color: #3C3C3C;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .roboto-700 {
+            color: #363958;
+            font-family: Roboto;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .roboto-900 {
+            color: #FABE4C;
+            font-family: Roboto;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        .bebas-400 {
+            font-family: "Bebas Neue";
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .card-ftr {
+            border-radius: 20px;
+            background: #FFF;
+            box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body class="roboto-500 bg-white">
+    <header class="bg-[#FFFBF0]">
+        <div class="container mx-auto">
+            <nav class="flex flex-col md:flex-row items-center">
+                <div class="nav-left flex space-x-12 flex-1 justify-center  md:justify-start">
+                    <div class="logo py-11 w-1/2">
+                        <img src="icons/logo.png" alt="">
+                    </div>
+                    <div class="side-design hidden lg:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="61" viewBox="0 0 150 61"
+                            fill="none">
+                            <circle cx="2.08346" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="83.1018" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="2.08346" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="83.1018" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="2.08346" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="83.1018" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="2.08346" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="83.1018" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="18.2871" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="99.3055" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="18.2871" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="99.3055" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="18.2871" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="99.3055" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="18.2871" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="99.3055" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="34.4908" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="115.509" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="34.4908" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="115.509" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="34.4908" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="115.509" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="34.4908" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="115.509" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="50.6945" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="131.713" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="50.6945" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="131.713" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="50.6945" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="131.713" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="50.6945" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="131.713" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="66.8981" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="147.916" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="66.8981" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="147.916" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="66.8981" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="147.916" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="66.8981" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                            <circle cx="147.916" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="nav-right flex space-x-4 md:space-x-12 flex-1 justify-end py-10">
+                    <a class="roboto-500" href="">Home</a>
+                    <a class="roboto-500" href="">product</a>
+                    <a class="roboto-500" href="">About us</a>
+                    <a class="roboto-500" href="">Contact us</a>
+                </div>
+            </nav>
+
+            <!-- hero section -->
+            <section class="hero-sec">
+                <div class="flex flex-col-reverse md:flex-row items-center">
+                    <div class="hero-left flex-1">
+                        <div class="lft flex-row">
+                            <h2 class=" bebas-400 text-[#FABE4C] text-[80px]">Be the Penguins <br> <span
+                                    class="text-[#363958]">of Winter</span></h2>
+                            <p class="roboto-400 text-[#3E3E3E] pb-5">Lorem Ipsum is simply dummy text of the printing
+                                <br>and typesetting industry.
+                            </p>
+                            <button
+                                class="flex px-9 py-5 rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white border-none gap-x-2">
+                                <img src="icons/shopping-cart 1.png" alt="" class="w-6">
+                                BUY NOW
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-right flex-1 flex justify-center py-16">
+                        <img src="images/model.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="container mx-auto">
+            <h2 class="bebas-400  text-5xl mt-12 mb-5">WOMAN JACKET</h2>
+            <div class="woman-jacket grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card shadow-xl p-6">
+                    <figure><img src="images/jacket-2.png" class="bg-[#F1F1F1] rounded-3xl p-6" /></figure>
+                    <div class="card-body">
+                        <h2 class="roboto-700">Ladies Jacket </h2>
+                        <p class="roboto-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <div class="flex items-center">
+                            <p class="roboto-900">$234</p>
+                            <button
+                                class="flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white border-none gap-x-2">
+                                <img src="icons/shopping-cart 1.png" alt="" class="w-6">
+                                BUY NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow-xl p-6">
+                    <figure><img src="images/jacket-3.png" class="bg-[#F1F1F1] rounded-3xl p-6" /></figure>
+                    <div class="card-body">
+                        <h2 class="roboto-700">Woman Leather Jacket </h2>
+                        <p class="roboto-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <div class="flex items-center">
+                            <p class="roboto-900">$234</p>
+                            <button
+                                class="flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white border-none gap-x-2">
+                                <img src="icons/shopping-cart 1.png" alt="" class="w-6">
+                                BUY NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow-xl p-6">
+                    <figure><img src="images/jacket-1.png" class="bg-[#F1F1F1] rounded-3xl p-6" /></figure>
+                    <div class="card-body">
+                        <h2 class="roboto-700">Yellow Coat Jacket </h2>
+                        <p class="roboto-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <div class="flex items-center">
+                            <p class="roboto-900">$234</p>
+                            <button
+                                class="flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white border-none gap-x-2">
+                                <img src="icons/shopping-cart 1.png" alt="" class="w-6">
+                                BUY NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto">
+            <h2 class="bebas-400  text-5xl mt-24 mb-5">MAN JACKET</h2>
+            <div class="man-jacket grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card shadow-xl p-6">
+                    <figure><img src="images/jacket-4.png" class="bg-[#F1F1F1] rounded-3xl p-6" /></figure>
+                    <div class="card-body">
+                        <h2 class="roboto-700">Snowboard Jacket Mens</h2>
+                        <p class="roboto-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <div class="flex items-center">
+                            <p class="roboto-900">$234</p>
+                            <button
+                                class="flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white border-none gap-x-2">
+                                <img src="icons/shopping-cart 1.png" alt="" class="w-6">
+                                BUY NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow-xl p-6">
+                    <figure><img src="images/jacket-5.png" class="bg-[#F1F1F1] rounded-3xl p-6" /></figure>
+                    <div class="card-body">
+                        <h2 class="roboto-700">Man Leather Jackets</h2>
+                        <p class="roboto-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <div class="flex items-center">
+                            <p class="roboto-900">$234</p>
+                            <button
+                                class="flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white border-none gap-x-2">
+                                <img src="icons/shopping-cart 1.png" alt="" class="w-6">
+                                BUY NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow-xl p-6">
+                    <figure><img src="images/jacket-6.png" class="bg-[#F1F1F1] rounded-3xl p-6" /></figure>
+                    <div class="card-body">
+                        <h2 class="roboto-700">Man Casual Jackets</h2>
+                        <p class="roboto-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <div class="flex items-center">
+                            <p class="roboto-900">$234</p>
+                            <button
+                                class="flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white border-none gap-x-2">
+                                <img src="icons/shopping-cart 1.png" alt="" class="w-6">
+                                BUY NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="container mx-auto mt-32 pb-48">
+            <div class="ftr flex flex-col-reverse md:flex-row items-center">
+                <div class="left-ftr flex flex-col space-y-4 flex-1">
+                    <div class="card-ftr flex items-center space-x-9 py-5 pl-7 pr-16">
+                        <div class="card-img">
+                            <img src="icons/house.png" alt="" class="w-20">
+                        </div>
+                        <div class="text-ftr">
+                            <p class="roboto-700">Find the Perfect Fit</p>
+                            <p class="roboto-400">Everybody is different, which is why we offer styles for every body.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-ftr flex items-center space-x-9 py-5 pl-7 pr-16">
+                        <div class="card-img">
+                            <img src="icons/box.png" alt="" class="w-20">
+                        </div>
+                        <div class="text-ftr">
+                            <p class="roboto-700">Free Exchanges</p>
+                            <p class="roboto-400">One of the many reasons you can shop with peace of mind.</p>
+                        </div>
+                    </div>
+                    <div class="card-ftr flex items-center space-x-9 py-5 pl-7 pr-16">
+                        <div class="card-img">
+                            <img src="icons/question.png" alt="" class="w-20">
+                        </div>
+                        <div class="text-ftr">
+                            <p class="roboto-700">Contact Our Seller</p>
+                            <p class="roboto-400">They are here to help you. That's quite literally what we pay them for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-ftr flex-1 p-10 mb-10 md:mb-0">
+                    <img src="images/shopping.png" alt="">
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
